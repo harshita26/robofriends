@@ -19,8 +19,8 @@ class App extends Component{
       .then(response=>{
          return response.json();
       })
-      .then(users=> {this.setState({robots:users})});
-      // this.setState({robots:robots});
+      //.then(users=> {this.setState({robots:users})});
+       this.setState({robots:robots});
    }
 
    onsearchchange=(event)=>{
