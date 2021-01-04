@@ -9,16 +9,16 @@ class App extends Component{
    constructor(){
       super()
       this.state={
-         robots:[],
+         robots:robots,
          searchfield:''
       }
    }
 
    componentDidMount(){
-      fetch('http://jsonplaceholder.typicode.com/users')
-      .then(response=>{
-         return response.json();
-      })
+//       fetch('http://jsonplaceholder.typicode.com/users')
+//       .then(response=>{
+//          return response.json();
+//       })
       //.then(users=> {this.setState({robots:users})});
        this.setState({robots:robots});
    }
